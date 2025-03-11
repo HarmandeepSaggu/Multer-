@@ -74,16 +74,16 @@ export default function FileUpload() {
   };
 
   return (
-    <div className="p-6 max-w-md mx-auto bg-gray-100 rounded-lg shadow-lg">
+    <div className="p-6 max-w-md mx-auto rounded-lg shadow-lg">
       <ToastContainer position="top-right" autoClose={3000} />
       {/* File Input */}
-      <input
-        type="file"
-        accept="image/png, image/jpeg"
-        multiple
-        onChange={handleFileChange}
-        className="mb-2 block w-full p-2 border rounded"
-      />
+      <input 
+  type="file" 
+  accept="image/png, image/jpeg" 
+  multiple 
+  onChange={handleFileChange} 
+  className="block w-full text-sm text-gray-700 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:text-white file:bg-blue-500 file:cursor-pointer hover:file:bg-blue-600 border border-gray-300 rounded-lg cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent p-1.5 transition duration-200"
+/>
 
       {/* Image Previews */}
       {previews.length > 0 && (
